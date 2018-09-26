@@ -1,0 +1,31 @@
+.breadcrumbs {
+    &__ol {
+        margin-bottom: 41px;
+        padding-left: 46px;
+        padding-top: 15px;
+        background: transparent;
+        li {
+            a {
+                font-size: 14px;
+                color: $color-content;
+                list-style-type: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.breadcrumb>li+li:before {
+    content: ">";
+    padding: 0 5px;
+    color: $color-content;
+}
+
+@media only screen and (max-width:768px) {
+    .breadcrumbs {
+        &__ol {
+            padding-left: 0px;
+            padding-top: 30px;
+        }
+    }
+}
